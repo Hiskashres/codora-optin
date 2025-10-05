@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codora Software SMS Opt-In</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 40px;
+      color: #333;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #38b6ff;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .checkbox {
+      margin-top: 15px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #38b6ff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2499db;
+    }
+    .disclaimer {
+      font-size: 12px;
+      margin-top: 20px;
+      color: #555;
+    }
+    .disclaimer a {
+      color: #38b6ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SMS Notifications Opt-In</h1>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" required>
+
+      <div class="checkbox">
+        <input type="checkbox" id="consent" required>
+        <label for="consent">
+          I agree to receive SMS notifications from Codora Software.
+        </label>
+      </div>
+
+      <button type="submit">Opt-In</button>
+    </form>
+
+    <div class="disclaimer">
+      By opting in, you agree to receive SMS updates related to Codora Software services.  
+      Msg & Data rates may apply.  
+      Reply <b>HELP</b> for help or <b>STOP</b> to cancel.  
+      <br><br>
+      See our <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms of Service</a>.
+    </div>
+  </div>
+</body>
+</html>
