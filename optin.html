@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SMS Opt-In | Codora Software</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; color: #333; line-height: 1.6; }
-    h1 { color: #38b6ff; }
-    label, input, button { display: block; margin-bottom: 10px; }
-    button { background-color: #38b6ff; border: none; color: white; padding: 10px 15px; cursor: pointer; border-radius: 5px; }
+    body{font-family:Arial,Helvetica,sans-serif;max-width:760px;margin:40px auto;padding:0 16px;color:#222}
+    h1{color:#38b6ff}
+    form{margin-top:18px}
+    label{display:block;margin-bottom:6px;font-weight:600}
+    input[type="tel"]{width:100%;padding:10px;border:1px solid #ccc;border-radius:6px}
+    .consent{background:#f7f9fc;padding:12px;border-radius:6px;margin:12px 0;border:1px solid #e6eef9}
+    button{background:#38b6ff;color:#fff;border:none;padding:10px 14px;border-radius:6px;cursor:pointer;font-size:16px}
+    p.small{font-size:0.95rem;color:#555}
+    a{color:#38b6ff}
   </style>
 </head>
 <body>
-  <h1>Sign Up for SMS Notifications</h1>
-  <p>By entering your phone number, you consent to receive updates and alerts from Codora Software about your account and our services.</p>
+  <h1>Sign up for SMS updates — Codora Software</h1>
 
-  <form>
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" placeholder="+1..." required>
-    <button type="submit">Submit</button>
+  <p class="small"><strong>Program name:</strong> Codora Software — Account & Service Notifications</p>
+  <p class="small"><strong>What you'll receive:</strong> Up to <strong>4 texts/month</strong> with account notifications and important updates.</p>
+
+  <div class="consent">
+    <p>
+      By submitting your phone number you consent to receive informational and service-related text messages from
+      <strong>Codora Software</strong>. Message &amp; data rates may apply. Reply <strong>HELP</strong> for help or <strong>STOP</strong> to cancel.
+    </p>
+  </div>
+
+  <form onsubmit="event.preventDefault(); alert('Demo: opt-in recorded (no backend).');">
+    <label for="phone">Phone number</label>
+    <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" required>
+    <button type="submit">Subscribe</button>
   </form>
 
-  <p>Message & data rates may apply. Reply STOP to unsubscribe or HELP for help.</p>
-  <p><a href="index.html">Back to Home</a></p>
+  <p class="small">Privacy & Terms: <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms of Service</a></p>
+  <p class="small">Contact: <a href="mailto:codorasoftware@gmail.com">codorasoftware@gmail.com</a></p>
 </body>
 </html>
